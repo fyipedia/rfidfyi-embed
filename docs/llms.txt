@@ -1,21 +1,52 @@
 # RFIDFYI Embed Widget
 
-> Embeddable RFIDFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> RFID tags, frequency bands. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/rfidfyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/rfidfyi-embed@1/dist/embed.min.js"></script>
+<div data-rfidfyi="epc-decoder" data-slug="example"></div>
+```
+
+## Available Widget Types (8)
+
+- spec: `data-rfidfyi="spec"`
+- compare: `data-rfidfyi="compare"`
+- glossary: `data-rfidfyi="glossary"`
+- faq: `data-rfidfyi="faq"`
+- guide: `data-rfidfyi="guide"`
+- search: `data-rfidfyi="search"`
+- epc-decoder (interactive): `data-rfidfyi="epc-decoder"`
+- frequency (interactive): `data-rfidfyi="frequency"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-rfidfyi="epc-decoder" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/rfidfyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://rfidfyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://rfidfyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://rfidfyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://rfidfyi.com
 - Widget docs: https://widget.rfidfyi.com
-- npm: https://www.npmjs.com/package/rfidfyi-embed
+- API documentation: https://rfidfyi.com/developers/
+- npm package: https://www.npmjs.com/package/rfidfyi-embed
 - GitHub: https://github.com/fyipedia/rfidfyi-embed
-- API: https://rfidfyi.com/developers/
 
-## Tag FYI Widget Family
+## Tag FYI Widget Network
 
 - [BarcodeFYI Widget](https://widget.barcodefyi.com)
 - [QRCodeFYI Widget](https://widget.qrcodefyi.com)
