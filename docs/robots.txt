@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# RFIDFYI Embed Widget
+# Main site: https://rfidfyi.com
+# Widget docs: https://widget.rfidfyi.com
+# npm: https://www.npmjs.com/package/rfidfyi-embed
